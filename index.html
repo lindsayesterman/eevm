@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <title>Lindsay Esterman</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <div id="particles-js"></div>
+
+    <script src="particles.js"></script>
+
+    <script src="app.js"></script>
+
+
+
+    <div class="container-intro">
+
+        <div class="hello-intro">
+            <h2>I'M LINDSAY</h2>
+        </div>
+
+        <ul>
+
+            <li><a href="https://github.com/lindsayesterman" target="_blank" class="github">GITHUB</a></li>
+
+            <li><a href="#portfolio" class="portfolio">PORTFOLIO</a></li>
+
+        </ul>
+
+    </div>
+
+
+
+    <a data-scroll href="#portfolio">
+        <div class="scroll_down">
+            <svg id="arrow" width="19px" height="19px" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <polygon id="Triangle-1"
+                    transform="translate(9.500000, 9.500000) rotate(-180.000000) translate(-9.500000, -9.500000) "
+                    points="9.5 0 19 19 0 19 "></polygon>
+            </svg>
+        </div>
+    </a>
+
+
+
+    <a id="portfolio"></a>
+
+    <main>
+
+        <p class="about_me">Student with a deep interest in computer programming and artificial intelligence. Certified
+            full-stack web developer. Check out my
+
+            <a href="https://github.com/lindsayesterman" target="_blank">github</a>!
+        </p><br>
+
+
+
+    </main>
+
+    <a id="projects"></a>
+
+
+    <!-- Contact Links -->
+    <div class="about_me">
+        <h3>Get in touch with me here:<br></h3>
+
+        <ol>
+            <li><a href="https://www.linkedin.com/in/lindsayesterman/" target="_blank"><img src="img/linkedin.png"></a>
+            </li>
+
+            <li><a href="https://github.com/lindsayesterman" target="_blank"><img src="img/gh-icon.png"></a></li>
+
+            <li><a href="mailto:lindsayesterman@gmail.com"><img src="img/email-icon.png"></a></li>
+
+        </ol>
+    </div>
+
+    <!-- Boxes for showing projects -->
+
+    <div class="container-projects">
+
+        <div class="dct">
+            <a href="scrtime-saver.html">
+                <img src="img/scrtimeSnap.png" class="dct" alt="screentime saver">
+                <div>Screentime Saver</div>
+            </a>
+
+        </div>
+
+        <div class="dct">
+            <a href="mood-tracker.html">
+                <img src="img/moodTrackerCover.png" class="dct" alt="mood tracker">
+                <div>Mood Tracker</div>
+            </a>
+
+        </div>
+
+        <div class="dct">
+            <a href="project-finder.html">
+                <img src="img/pf.png" class="dct" alt="project finder">
+                <div>Moonshot</div>
+            </a>
+
+        </div>
+
+
+        <!-- <div class="dct">
+            <a href="dct.html">
+                <img src="img/dct.png" class="dct" alt="daily college tip ">
+                <div>Daily College Tip</div>
+            </a>
+
+        </div> -->
+
+        <div class="dct">
+            <a href="shehacks.html">
+                <img src="img/sh.png" class="dct" alt="women in programming">
+                <div>She Hacks</div>
+            </a>
+
+        </div>
+
+
+        <div class="nasa">
+            <a href="nasa.html">
+                <img src="img/nadp.png"
+                    class="nasa" alt="nasa picture">
+                <div>Mercury</div>
+            </a>
+
+        </div>
+
+        <div class="dct">
+            <a href="team.html">
+                <img src="img/tf.png" class="dct" alt="coding team">
+                <div>Team'n Up</div>
+            </a>
+
+        </div>
+
+
+        <!-- <div class="dct">
+            <a target="_blank" href="https://estermaneye-optical.vercel.app/">
+                <img src="img/estermanEyeLanding.png" class="dct" alt="esterman eye site">
+                <div>Esterman Eye Optical</div>
+            </a>
+
+        </div> -->
+    </div>
+
+
+
+    <footer>
+        <div class="le">
+
+            @ Lindsay Esterman 2020
+
+        </div>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("a").on('click', function (event) {
+
+                if (this.hash !== "") {
+                    event.preventDefault();
+
+                    var hash = this.hash;
+
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 450, function () {
+
+
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
