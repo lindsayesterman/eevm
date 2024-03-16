@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <title>Lindsay Esterman</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="hackatl.css">
+
+</head>
+
+
+<body>
+
+    <div class="nav-bar">
+        <ul>
+            <li><a href="index.html#about">About us</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+
+    <div calass="container">
+        <div class="slides starter">
+            <h2>HackATL through the ages</h2>
+            <div class="box">
+                <h5>Scroll to be taken back in time...</h5>
+            </div>
+        </div>
+        <div class="slides">
+            <img src="img/hackatl23.png">
+        </div>
+        <div class="slides">
+            <img src="img/hackatl22.png">
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.scroll-section').forEach((section, index) => {
+            section.addEventListener('click', () => {
+                window.scrollTo({
+                    top: section.offsetTop,
+                    behavior: 'smooth' // This enables smooth scrolling
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>

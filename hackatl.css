@@ -1,0 +1,175 @@
+.nav-bar {
+    width: 99%;
+    background-color: transparent;
+    position: absolute;
+    bottom: 20px;
+    top: 5px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .nav-bar > ul > li > a {
+    text-decoration: none;
+    font-size: 15px;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    color: black;
+    text-align: center;
+    margin: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    justify-content: center;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: "Lato", sans-serif;
+  }
+  
+  * {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+.slides {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slides img {
+  width: 100%;
+}
+
+.slides h2 {
+  z-index: 99;
+  font-size: 68px;
+  color: black;
+  position: absolute;
+  top: 43%;
+  left: 20%;
+}
+
+.slides h5 {
+  z-index: 99;
+  font-size: 40px;
+  color: black;
+  position: absolute;
+  top: 55%;
+  left: 20%;
+  animation: shaking 0.6s 0s infinite alternate,
+    changeColor 4.8s 0.1s ease-in-out infinite;
+}
+
+.starter {
+  /* background: rgb(211, 211, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(211, 211, 255, 1) 0%,
+    rgba(59, 20, 115, 1) 100%
+  ); */
+}
+
+.box {
+    width: 100%;
+}
+@keyframes shake {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(1px, 1px) rotate(5deg);
+  }
+  50% {
+    transform: translate(0, 0) rotate(0eg);
+  }
+  75% {
+    transform: translate(-1px, 1px) rotate(-5deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+@keyframes shaking {
+  0% {
+    transform: skewX(-15deg);
+  }
+  5% {
+    transform: skewX(15deg);
+  }
+  10% {
+    transform: skewX(-15deg);
+  }
+  15% {
+    transform: skewX(15deg);
+  }
+  20% {
+    transform: skewX(-15deg);
+  }
+  25% {
+    transform: skewX(15deg);
+  }
+  30% {
+    transform: skewX(-15deg);
+  }
+  35% {
+    transform: skewX(15deg);
+  }
+  50% {
+    transform: skewX(0deg);
+  }
+  100% {
+    transform: skewX(0deg);
+  }
+}
+
+@keyframes changeColor {
+  0% {
+    color: #3253e2;
+  }
+  24% {
+    color: #3253e2;
+  }
+  25% {
+    color: #f05112;
+  }
+
+  49% {
+    color: #f05112;
+  }
+
+  50% {
+    color: #f029cf;
+  }
+
+  74% {
+    color: #f029cf;
+  }
+  75% {
+    color: #9cdf20;
+  }
+  99% {
+    color: #9cdf20;
+  }
+  100% {
+    color: #3253e2;
+  }
+}

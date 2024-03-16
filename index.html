@@ -23,7 +23,7 @@
 </head>
 
 
-<body>
+<a>
 
 
     <div id="particles-js"></div>
@@ -32,45 +32,124 @@
 
     <script src="app.js"></script>
 
-
+    <div class="nav-bar">
+        <ul>
+            <li><a href="#about">About us</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
 
     <div class="container-intro">
 
         <div class="hello-intro">
-            <img width=250" src="img/eevm-logo.png">
+            <img width=300 src="img/eevm-logo.png">
         </div>
 
         <div class="learn-more">
             <span>
-                <a href="#portfolio">Learn more</a>
-                <img width=12 src="img/down.png">
+                <a href="#about">Learn more</a>
+                <a href="#about"><img width=10 src="img/down.png"></a>
             </span>
         </div>
 
     </div>
 
 
-    <a id="portfolio"></a>
+    <a id="about"></a>
 
     <main class="center">
         <h2 class="sub center">We lower the barriers to <span class="bold">entrepreneurship.</span></h2>
-        <img class="img-arr" src="img/img-array.png">
-        <p class="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.</p>
+        <div class="photo-collage">
+            <div class="card">
+                <img class="cover-image" src="img/club-photos/1.png">
+            </div>
+            <div class="card">
+                <img class="cover-image" src="img/club-photos/2.png">
+            </div>
+            <div class="card">
+                <img class="cover-image" src="img/club-photos/3.png">
+            </div>
+            <div class="card">
+                <img class="cover-image" src="img/club-photos/4.png">
+            </div>
+            <div class="card">
+                <img class="cover-image" src="img/club-photos/5.png">
+            </div>
+            <div class="card">
+                <img class="cover-image" src="img/club-photos/6.png">
+            </div>
+            <div class="card">
+                <img class="cover-image" src="img/club-photos/7.png">
+            </div>
+            <div class="card">
+                <img class="cover-image" src="img/club-photos/8.png">
+            </div>
+            <div class="card">
+                <img class="cover-image" src="img/club-photos/9.png">
+            </div>
+            <div class="card">
+                <img class="cover-image" src="img/club-photos/10.png">
+            </div>
+            <div class="card">
+                <img class="cover-image" src="img/club-photos/11.png">
+            </div>
+            <div class="card">
+                <img class="cover-image" src="img/club-photos/12.png">
+            </div>
+            <div class="card">
+                <img class="cover-image" src="img/club-photos/13.png">
+            </div>
+            <div class="card">
+                <img class="cover-image" src="img/club-photos/14.png">
+            </div>
+            <div class="card">
+                <img class="cover-image" src="img/club-photos/15.png">
+            </div>
+            <div class="card">
+                <img class="cover-image" src="img/club-photos/16.png">
+            </div>
+            <div class="card">
+                <img class="cover-image" src="img/club-photos/17.png">
+            </div>
+            <div class="card">
+                <img class="cover-image" src="img/club-photos/18.png">
+            </div>
+            <div class="card">
+                <img class="cover-image" src="img/club-photos/19.png">
+            </div>
+            <div class="card">
+                <img class="cover-image" src="img/club-photos/20.png">
+            </div>
+            <div class="card">
+                <img class="cover-image" src="img/club-photos/21.png">
+            </div>
+            <div class="card">
+                <img class="cover-image" src="img/club-photos/22.png">
+            </div>
+            <div class="card">
+                <img class="cover-image" src="img/club-photos/23.png">
+            </div>
+            <div class="card">
+                <img class="cover-image" src="img/club-photos/24.png">
+            </div>
+
+        </div>
     </main>
 
-    <div class="team">
-        <h2>Our team</h2>
-    </div>
+    <div class="paras">
+        <p class="center">Emory Entrepreneurship & Venture Management is a platform, resource, network, and community at
+            Emory University dedicated to creating opportunities for students to learn about and experience
+            entrepreneurship. </p>
 
+        <p class="center">We provide students with resources in hopes of lowering the barrier to building something
+            great. Through our annual hackathon and smaller initiatives throughout the semester, students get a taste of
+            what it's like to build things.
+        </p>
+    </div>
     <footer>
         <div class="le">
-
             @ EEVM 2024
-
         </div>
     </footer>
 
@@ -96,8 +175,22 @@
                 }
             });
         });
+
+        // Listen for hover events on all elements with the class 'cover-image'
+        // document.querySelectorAll('.cover-image').forEach(image => {
+        //   image.addEventListener('mouseover', () => {
+        //     image.classList.add('unblurred'); // Remove the blur effect permanently
+        //   });
+        // });
+
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('mouseover', () => {
+                card.classList.add('revealed'); // This class removes the white overlay permanently
+            });
+        });
+
     </script>
 
-</body>
+    </body>
 
 </html>
