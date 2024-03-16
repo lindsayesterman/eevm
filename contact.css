@@ -38,15 +38,26 @@ form {
   margin-top: 150px;
 }
 
-input, textarea, button {
-  display:block;
+input,
+textarea,
+button,
+h2 {
+  display: block;
   margin: 20px auto;
-  width:50%;
-  height:30px;
+  height: 30px;
+  width: 50%;
+  font-family: "Lato", sans-serif;
 }
 
 textarea {
-  height:70px;
-  resize:vertical;
+  height: 70px;
+  resize: vertical;
 }
 
+button {
+  border-radius: 8px;
+  background-color: rgb(192, 242, 255);
+  border: none;
+  padding: 10px;
+  height: 35px;
+}
