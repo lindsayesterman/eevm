@@ -52,20 +52,20 @@ body {
 .learn-more {
   width: 100px;
   background-color: #fbfbfb;
-  border: 1px solid #B6B6B6;
+  border: 1px solid #b6b6b6;
   padding: 2px 7px;
   border-radius: 20px;
   margin: 10px auto;
   font-size: 14px;
 }
 
-.learn-more a:hover{
-    cursor: pointer;
+.learn-more a:hover {
+  cursor: pointer;
 }
 
-span{
-    display: flex;
-    justify-content: space-around;
+span {
+  display: flex;
+  justify-content: space-around;
 }
 
 #particles-js {
@@ -86,36 +86,36 @@ span{
 }
 
 .bold {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .sub {
-    font-size: 44px;
-    padding-top: 35px;
-    padding-bottom: 15px;
-    padding-left: 20px;
-    font-weight: 500;
-    text-align: center;
+  font-size: 44px;
+  padding-top: 35px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  font-weight: 500;
+  text-align: center;
 }
 
 .center {
-    display: block;
-    margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 }
 
-.paras{
-    padding-top: 10px;
-    padding-bottom: 50px;
+.paras {
+  padding-top: 10px;
+  padding-bottom: 50px;
 }
 
-.paras p{
+.paras p {
   padding-top: 25px;
 }
 
 footer {
-    background-color: whitesmoke;
-    height: 100px;
-    position: relative;
+  background-color: whitesmoke;
+  height: 100px;
+  position: relative;
 }
 
 .le {
@@ -127,16 +127,16 @@ footer {
   transform: translate(-50%, -50%);
 }
 
-p{
+p {
   width: 60%;
 }
 
 .photo-collage {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 100px); 
-  gap: 8px; 
-  padding: 20px; 
-  margin: 0 auto; 
+  grid-template-columns: repeat(auto-fill, 100px);
+  gap: 8px;
+  padding: 20px;
+  margin: 0 auto;
   width: 60%;
 }
 
@@ -146,7 +146,7 @@ p{
 }
 
 .card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -172,8 +172,18 @@ p{
   background: none;
 }
 
-@media screen and (max-width: 700px){
-  .photo-collage{
+p {
+  color: rgb(88, 88, 88);
+  font-size: 15px;
+}
+
+p a {
+  text-decoration: none;
+  color: rgb(87, 149, 255);
+}
+
+@media screen and (max-width: 700px) {
+  .photo-collage {
     width: 100%;
   }
   .sub {

@@ -41,7 +41,8 @@ form {
 input,
 textarea,
 button,
-h2 {
+h2,
+p {
   display: block;
   margin: 20px auto;
   height: 30px;
@@ -49,7 +50,8 @@ h2 {
   font-family: "Lato", sans-serif;
 }
 
-textarea, input{
+textarea,
+input {
   border: 1px solid rgb(185, 185, 185);
   padding: 4px;
   border-radius: 4px;
@@ -71,4 +73,14 @@ button {
 
 button:hover {
   cursor: pointer;
+}
+
+form p {
+  color: rgb(88, 88, 88);
+  font-size: 15px;
+}
+
+form p a {
+  text-decoration: none;
+  color: rgb(87, 149, 255);
 }
