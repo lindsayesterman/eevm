@@ -57,14 +57,18 @@ textarea, input{
 }
 
 textarea {
-  height: 70px;
+  height: 100px;
   resize: vertical;
 }
 
 button {
   border-radius: 8px;
-  background-color: rgba(197, 225, 252, 0.467);
+  background-color: rgba(163, 209, 252, 0.467);
   border: none;
   padding: 10px;
   height: 35px;
+}
+
+button:hover {
+  cursor: pointer;
 }
