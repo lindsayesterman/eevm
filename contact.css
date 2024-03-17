@@ -49,6 +49,13 @@ h2 {
   font-family: "Lato", sans-serif;
 }
 
+textarea, input{
+  border: 1px solid rgb(185, 185, 185);
+  padding: 4px;
+  border-radius: 4px;
+  background-color: rgb(251, 251, 251);
+}
+
 textarea {
   height: 70px;
   resize: vertical;
@@ -56,7 +63,7 @@ textarea {
 
 button {
   border-radius: 8px;
-  background-color: rgb(192, 242, 255);
+  background-color: rgba(197, 225, 252, 0.467);
   border: none;
   padding: 10px;
   height: 35px;
