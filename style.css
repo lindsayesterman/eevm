@@ -1,46 +1,56 @@
-.nav-bar {
-  width: 99%;
-  background-color: transparent;
-  position: absolute;
-  bottom: 20px;
-  top: 5px;
-  height: 50px;
-  display: flex;
-  justify-content: flex-start; /* Align content to the start */
-}
-
-.nav-bar > ul {
-  width: 100%; /* Ensure the ul covers the full width */
-  list-style: none;
-  display: flex;
-  padding: 10px; /* Remove padding */
-  align-items: center; /* Align items vertically */
-}
-
-.nav-bar > ul > li:first-child {
-  flex-grow: 1; /* Allow the first li to grow and push others to the right */
-}
-
-.nav-bar > ul > li.links > a {
-  text-decoration: none;
-  font-size: 15px;
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  color: black;
-  text-align: center;
-  margin: 10px; /* Adjust margin as needed */
-}
-
-.nav-bar > ul > li:last-child {
-  display: flex;
-  justify-content: flex-end; /* Align the links to the right */
-}
-
 body {
   margin: 0;
   padding: 0;
   height: 100vh;
   font-family: "Lato", sans-serif;
+}
+
+.nav-bar {
+  width: 95%; /* Keep your desired width */
+  height: 40px; /* Keep your desired height */
+  position: absolute; /* Keep it absolute to position it over other elements */
+  top: 5%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Offset by half of the element's width and height */
+  display: flex; /* Keep using flex */
+  justify-content: center; /* Align children (ul) in the center horizontally */
+  align-items: center; /* Align children (ul) in the center vertically */
+  background-color: #EEEEEE; /* Keep your background color */
+  border-radius: 16px; /* Keep your border radius */
+}
+
+.nav-bar > ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  padding: 0px;
+  align-items: center;
+}
+
+.nav-bar > ul > li:first-child {
+  flex-grow: 1;
+  margin-top: 2px;
+  margin-left: 5px;
+}
+
+.nav-bar img {
+  width: 40px;
+  border-radius: 12px;
+}
+
+.nav-bar > ul > li.links > a {
+  text-decoration: none;
+  font-size: 13px;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  color: black;
+  text-align: center;
+  margin: 10px 15px;
+}
+
+.nav-bar > ul > li:last-child {
+  display: flex;
+  justify-content: flex-end;
 }
 
 a {

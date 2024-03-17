@@ -14,13 +14,13 @@
 }
 
 .learn-more {
-  width: 100px;
+  width: 80px;
   background-color: #fbfbfb;
   border: 1px solid #dfdfdf;
   padding: 2px 7px;
   border-radius: 20px;
   margin: 10px auto;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .learn-more a:hover {
