@@ -18,13 +18,13 @@
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
 
+    <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
 
 
-<a>
-
+<body>
 
     <div id="particles-js"></div>
 
@@ -34,9 +34,12 @@
 
     <div class="nav-bar">
         <ul>
-            <li><a href="#about">About us</a></li>
-            <li><a href="team.html">Team</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html"><img width="50" src="img/logo.png"></li></a>
+            <li class="links">
+                <a href="index.html#about">About us</a>
+                <a href="team.html">Team</a>
+                <a href="contact.html">Contact</a>
+            </li>
         </ul>
     </div>
 
@@ -52,7 +55,6 @@
                 <a href="#about"><img width=10 src="img/down.png"></a>
             </span>
         </div>
-
     </div>
 
 
@@ -146,10 +148,10 @@
             great. Through our annual hackathon and smaller initiatives throughout the semester, students get a taste of
             what it's like to build things.
         </p>
-        <p class="center">You can keep up with our events by following us on <a
-                href="https://www.instagram.com/emoryevm/">Instagram</a> and <a
+        <p class="center">You can keep up with our events by following us on <a target="_blank"
+                href="https://www.instagram.com/emoryevm/">Instagram</a> and <a target="_blank"
                 href="https://www.linkedin.com/company/emory-entrepreneurship-&-venture-management/">LinkedIn.</a> We
-            have a <a
+            have a <a target="_blank"
                 href="https://open.spotify.com/playlist/0oEFTVsSdg4bp3ZCbP3iJW?si=71ead1272cb14deb&nd=1&dlsi=7f08369081bf4dfa">Spotify</a>
             playlist too.</p>
     </div>
@@ -181,14 +183,6 @@
                 }
             });
         });
-
-        // Listen for hover events on all elements with the class 'cover-image'
-        // document.querySelectorAll('.cover-image').forEach(image => {
-        //   image.addEventListener('mouseover', () => {
-        //     image.classList.add('unblurred'); // Remove the blur effect permanently
-        //   });
-        // });
-
         document.querySelectorAll('.card').forEach(card => {
             card.addEventListener('mouseover', () => {
                 card.classList.add('revealed'); // This class removes the white overlay permanently
@@ -197,6 +191,6 @@
 
     </script>
 
-    </body>
+</body>
 
 </html>

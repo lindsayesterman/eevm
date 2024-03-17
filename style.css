@@ -1,195 +1,38 @@
 .nav-bar {
-  width: 99%;
-  background-color: transparent;
-  position: absolute;
-  bottom: 20px;
-  top: 5px;
-  height: 50px;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.nav-bar > ul > li > a {
-  text-decoration: none;
-  font-size: 15px;
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  color: black;
-  text-align: center;
-  margin: 10px;
-}
-
-ul {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  padding-left: 0;
-  justify-content: center;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  font-family: "Lato", sans-serif;
-}
-
-.container-intro {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  text-align: center;
-  transform: translate(-50%, -50%);
-  height: 130px;
-  width: 300px;
-}
-
-.hello-intro img {
-  display: block;
-  margin: 0 auto;
-}
-
-.learn-more {
-  width: 100px;
-  background-color: #fbfbfb;
-  border: 1px solid #b6b6b6;
-  padding: 2px 7px;
-  border-radius: 20px;
-  margin: 10px auto;
-  font-size: 14px;
-}
-
-.learn-more a:hover {
-  cursor: pointer;
-}
-
-span {
-  display: flex;
-  justify-content: space-around;
-}
-
-#particles-js {
-  height: 100%;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.particles-js-canvas-el {
-  position: absolute;
-}
-
-.learn-more a {
-  color: #000;
-  text-decoration: none;
-}
-
-.bold {
-  font-weight: 600;
-}
-
-.sub {
-  font-size: 44px;
-  padding-top: 35px;
-  padding-bottom: 15px;
-  padding-left: 20px;
-  font-weight: 500;
-  text-align: center;
-}
-
-.center {
-  display: block;
-  margin: 0 auto;
-}
-
-.paras {
-  padding-top: 10px;
-  padding-bottom: 50px;
-}
-
-.paras p {
-  padding-top: 25px;
-}
-
-footer {
-  background-color: whitesmoke;
-  height: 100px;
-  position: relative;
-}
-
-.le {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-p {
-  width: 60%;
-}
-
-.photo-collage {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 100px);
-  gap: 8px;
-  padding: 20px;
-  margin: 0 auto;
-  width: 60%;
-}
-
-.card {
-  position: relative;
-  display: inline-block; /* Adjust based on your layout */
-}
-
-.card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.5); /* White color overlay */
-  transition: background 0.3s ease; /* Smooth transition */
-  border-radius: 2px; /* Match your image's border-radius if it has any */
-}
-
-.card:hover::before {
-  background: none;
-}
-
-.cover-image {
-  display: block; /* Ensures the image fills the container */
-  width: 100%; /* Adjust as necessary */
-  height: auto;
-  border-radius: 2px; /* Adds rounded corners to your images, adjust as necessary */
-}
-
-.card.revealed::before {
-  background: none;
-}
-
-p {
-  color: rgb(88, 88, 88);
-  font-size: 15px;
-}
-
-p a {
-  text-decoration: none;
-  color: rgb(87, 149, 255);
-}
-
-@media screen and (max-width: 700px) {
-  .photo-collage {
-    width: 100%;
+    width: 99%;
+    background-color: transparent;
+    position: absolute;
+    bottom: 20px;
+    top: 5px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start; /* Align content to the start */
   }
-  .sub {
-    font-size: 30px;
+  
+  .nav-bar > ul {
+    width: 100%; /* Ensure the ul covers the full width */
+    list-style: none;
+    display: flex;
+    padding: 10px; /* Remove padding */
+    align-items: center; /* Align items vertically */
   }
-  p {
-    width: 93%;
+  
+  .nav-bar > ul > li:first-child {
+    flex-grow: 1; /* Allow the first li to grow and push others to the right */
   }
-}
+  
+  .nav-bar > ul > li.links > a {
+    text-decoration: none;
+    font-size: 15px;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    color: black;
+    text-align: center;
+    margin: 10px; /* Adjust margin as needed */
+  }
+  
+  .nav-bar > ul > li:last-child {
+    display: flex;
+    justify-content: flex-end; /* Align the links to the right */
+  }
+  
