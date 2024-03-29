@@ -62,11 +62,6 @@ span {
   text-align: center;
 }
 
-.center {
-  display: block;
-  margin: 0 auto;
-}
-
 .paras {
   padding-top: 10px;
   padding-bottom: 50px;
@@ -91,8 +86,14 @@ footer {
   transform: translate(-50%, -50%);
 }
 
-p {
+p, .paras h3{
   width: 60%;
+  display: block;
+  margin: 0 auto;
+}
+
+.paras h3{
+  padding-top: 20px;
 }
 
 .photo-collage {
@@ -139,6 +140,10 @@ p {
 p {
   color: rgb(88, 88, 88);
   font-size: 15px;
+}
+
+.paras h3{
+
 }
 
 @media screen and (max-width: 700px) {
