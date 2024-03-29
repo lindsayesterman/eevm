@@ -86,13 +86,14 @@ footer {
   transform: translate(-50%, -50%);
 }
 
-p, .paras h3{
+p,
+.paras h3 {
   width: 60%;
   display: block;
   margin: 0 auto;
 }
 
-.paras h3{
+.paras h3 {
   padding-top: 20px;
 }
 
@@ -102,7 +103,8 @@ p, .paras h3{
   gap: 8px;
   padding: 20px;
   margin: 0 auto;
-  width: 60%;
+  width: 860px;
+  padding-left: 40px;
 }
 
 .card {
@@ -142,8 +144,10 @@ p {
   font-size: 15px;
 }
 
-.paras h3{
-
+@media screen and (max-width: 1250px) {
+  .photo-collage {
+    width: 60%;
+  }
 }
 
 @media screen and (max-width: 700px) {
