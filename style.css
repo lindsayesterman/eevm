@@ -11,11 +11,14 @@ body {
   position: absolute; /* Keep it absolute to position it over other elements */
   top: 5%; /* Center vertically */
   left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Offset by half of the element's width and height */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Offset by half of the element's width and height */
   display: flex; /* Keep using flex */
   justify-content: center; /* Align children (ul) in the center horizontally */
   align-items: center; /* Align children (ul) in the center vertically */
-  background-color: #EEEEEE; /* Keep your background color */
+  background-color: #eeeeee; /* Keep your background color */
   border-radius: 16px; /* Keep your border radius */
 }
 
@@ -38,7 +41,8 @@ body {
   border-radius: 12px;
 }
 
-.nav-bar > ul > li.links > a {
+.nav-bar > ul > li.links > a,
+.nav-bar > ul > li.links > .dropdown{
   text-decoration: none;
   font-size: 13px;
   font-family: "Lato", sans-serif;
@@ -56,4 +60,37 @@ body {
 a {
   text-decoration: none;
   color: rgb(87, 149, 255);
+}
+
+
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 8px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
 }
